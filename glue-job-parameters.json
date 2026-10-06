@@ -1,0 +1,7 @@
+{
+  "--LASTFM_SECRET_ID": "lastfm/api",
+  "--S3_BUCKET_NAME": "lastfm-artist-bucket",
+  "--pages": "1",
+  "--limit": "50",
+  "--library-set": "analytics"
+}

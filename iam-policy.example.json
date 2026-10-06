@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::lastfm-artist-bucket/raw-data/*",
+        "arn:aws:s3:::lastfm-artist-bucket/transformed-data/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue"
+      ],
+      "Resource": "arn:aws:secretsmanager:eu-north-1:800557027629:secret:lastfm/api-*"
+    }
+  ]
+}
